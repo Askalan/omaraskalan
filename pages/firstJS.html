@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../pages/askalan.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Askalan</h1>
+    <p id="demo">Do you want?</p>
+    <button
+      type="button"
+      onclick='document.getElementById("demo").innerHTML = "Money"'
+    >
+      Click Me
+    </button>
+
+    <!-- Second step -->
+    <p>
+      in this case Javascript changes the value of the scr(source) attribute of
+      an image.
+    </p>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">
+      Turn on the light
+    </button>
+    <img id="myImage" src="pic_bullbon.gif" style="width: 100px" />
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">
+      Turn off the light
+    </button>
+
+    <!--step three -->
+    <p id="demo">JavaScript can change the style of an HTML element.</p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').style.fontSize='35px'"
+    >
+      Click Me
+    </button>
+    <br />
+
+    <!-- Step 4 -->
+    <p id="demo">JavaScript can hide HTML elements.</p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').style.display='none'"
+    >
+      Click Me
+    </button>
+    <br />
+    <!-- Step 5 -->
+    <p>JavaScript can show hidden HTML elements.</p>
+    <p id="demo" style="display: none">Ask Me Money!</p>
+    <button
+      type="button"
+      onclick="document.getElementById('demeo').style.display='block'"
+    >
+      Click Me
+    </button>
+
+    <!-- Changed paragraph -->
+    <script>
+      function myfunction() {
+        document.getElementById("demo").innerHTML = "Paragraph changed.";
+      }
+    </script>
+    <h2>Demo JavaScript in Head</h2>
+    <p id="demo">A paragraph.</p>
+    <button type="button" onclick="myfunction()">Try it</button> <br />.
+    <h3>JavaScrip Statements</h3>
+    <p>JavaScrip code blodks are written between { and }</p>
+    <button type="button" onclick="myFunctiion()">Ask</button>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+      function myFunctiion() {
+        document.getElementById("demo1").innerHTML = "Hello Dr Askalan";
+        document.getElementById("demo2").innerHTML = "How are you?";
+      }
+    </script>
+  </body>
+</html>
